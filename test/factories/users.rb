@@ -3,20 +3,8 @@ FactoryBot.define do
     first_name
     last_name
     password
-    email { "MyString" }
+    email
     avatar { "MyString" }
     type { "" }
-
-    factory :developer do
-      type { "Developer" }
-  
-      factory :admin do
-        type{ "Admin" }   
-      
-        factory :manager do
-          type{"Manager"}
-        end
-      end
-    end
   end
 end
