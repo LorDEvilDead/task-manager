@@ -1,5 +1,5 @@
 FactoryBot.define do
-  sequence :string, aliases: [:first_name, :last_name, :password, :name, :description, :state] do |n|
+  sequence :string, aliases: [:first_name, :last_name, :password, :name, :description, :state, :avatar] do |n|
     "string#{n}"
   end
 
@@ -8,6 +8,6 @@ FactoryBot.define do
   end
 
   sequence :expired_at do
-    Date.new
+    Date.current+1.week
   end
 end
