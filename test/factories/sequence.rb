@@ -10,4 +10,8 @@ FactoryBot.define do
   sequence :expired_at do
     Date.current + 2.week
   end
+
+  sequence :state do
+    ['new_task', 'in_qa', 'in_code_review', 'ready_for_release', 'released', 'archive'].sample
+  end
 end
