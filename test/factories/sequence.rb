@@ -12,6 +12,6 @@ FactoryBot.define do
   end
 
   sequence :state do
-    ['new_task', 'in_qa', 'in_code_review', 'ready_for_release', 'released', 'archive'].sample
+    'new_task'
   end
 end
